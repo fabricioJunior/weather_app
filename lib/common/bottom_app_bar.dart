@@ -24,15 +24,15 @@ class WeatherAppBottomNavigatorBar extends StatelessWidget {
             color: Colors.white,
           ),
           Icon(
-            Icons.search,
+            Icons.search_outlined,
             color: Colors.white,
           ),
           Icon(
-            Icons.person,
+            Icons.person_outline,
             color: Colors.white,
           ),
           Icon(
-            Icons.notifications,
+            Icons.notifications_outlined,
             color: Colors.white,
           ),
         ],

@@ -23,21 +23,27 @@ class SelecionarCidadePage extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Flexible(flex: 60, child: _backButton()),
-                  const Expanded(
-                    flex: 40,
-                    child: Text(
-                      'Search for State',
-                      style: TextStyle(
-                        color: Colors.white,
+              const SizedBox(
+                height: 16,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Flexible(flex: 60, child: _backButton()),
+                    const Expanded(
+                      flex: 40,
+                      child: Text(
+                        'Search for State',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                  ),
-                  const Expanded(flex: 20, child: SizedBox())
-                ],
+                    const Expanded(flex: 20, child: SizedBox())
+                  ],
+                ),
               ),
               const SizedBox(
                 height: 44,
