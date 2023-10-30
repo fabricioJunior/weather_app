@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/common/bottom_app_bar.dart';
 import 'package:weather_app/common/tempo_imagem.dart';
 import 'package:weather_app/domain/entities/estado.dart';
 import 'package:weather_app/presentation/informacoes_do_tempo_bloc/informacoes_do_tempo_bloc.dart';
@@ -22,6 +23,25 @@ class SelecionarCidadePage extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Flexible(flex: 60, child: _backButton()),
+                  const Expanded(
+                    flex: 40,
+                    child: Text(
+                      'Search for State',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const Expanded(flex: 20, child: SizedBox())
+                ],
+              ),
+              const SizedBox(
+                height: 44,
+              ),
               Flexible(
                 child: BlocBuilder<InformacoesDoTempoBloc,
                     InformacoesDoTempoState>(
@@ -47,25 +67,6 @@ class SelecionarCidadePage extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 16),
                         child: Column(
                           children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Flexible(flex: 60, child: _backButton()),
-                                const Expanded(
-                                  flex: 40,
-                                  child: Text(
-                                    'Search for State',
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    ),
-                                  ),
-                                ),
-                                const Expanded(flex: 20, child: SizedBox())
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 44,
-                            ),
                             ListView.separated(
                                 separatorBuilder: (context, index) {
                                   return const SizedBox(
@@ -88,7 +89,8 @@ class SelecionarCidadePage extends StatelessWidget {
                     );
                   },
                 ),
-              )
+              ),
+              const WeatherAppBottomNavigatorBar(),
             ],
           ),
         ),
