@@ -1,0 +1,60 @@
+{
+    "result": {
+        "estados": [
+            {
+                "estado": "Ceará",
+                "dias": [
+                    {
+                        "segunda": [
+                            {
+                                "manha": [
+                                    {
+                                        "tempo": "Sol",
+                                        "graus": "34"
+                                    }
+                                ],
+                                "tarde": [
+                                    {
+                                        "tempo": "Nublado",
+                                        "graus": "28"
+                                    }
+                                ],
+                                "noite": [
+                                    {
+                                        "tempo": "Chuva",
+                                        "graus": 26
+                                    }
+                                ]
+                            }
+                        ],
+                        "terca": [
+                            {
+                                "manha": [
+                                    {
+                                        "tempo": "Nublado",
+                                        "graus": "34"
+                                    }
+                                ]
+                            }
+                        ],
+                        "quarta": [
+                            {}
+                        ],
+                        "quinta": [
+                            {}
+                        ],
+                        "sexta": [
+                            {}
+                        ],
+                        "sabado": [
+                            {}
+                        ],
+                        "domingo": [
+                            {}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
